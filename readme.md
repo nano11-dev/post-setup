@@ -9,6 +9,6 @@
 - [Files app](https://files.community/)
 - [Nanazip](https://github.com/M2Team/NanaZip)
 
-* You need to provide yourself a key, I am not adding cracked/pirated programs to the post-setup
+   (*) You need to provide yourself a key, I am not adding cracked/pirated programs to the post-setup
 
 If you want to add something, just create a pull request!
