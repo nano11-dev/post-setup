@@ -42,7 +42,7 @@ jobs:
         uses: ncipollo/release-action@v1.10.0
         with:
           artifacts: "Post*"
-          tag: "v${{ env.version }}"
+          tag: "v${{ inputs.version }}"
           name: "PostSetup-${{ inputs.version }}"
           prerelease: "${{ inputs.nightly }}"
           bodyFile: "README.md"
