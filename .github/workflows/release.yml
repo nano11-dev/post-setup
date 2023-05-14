@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Manual release action
 
 # Controls when the workflow will run
 on:
@@ -10,6 +10,10 @@ on:
         description: 'Is this pre-release?'
         required: true
         type: boolean
+      version:
+        description: 'Is this pre-release?'
+        required: true
+        type: string
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -34,12 +38,11 @@ jobs:
         with:
           name: Post-Setup
           path: Post-Setup.zip
-      - run: echo "VER=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
       - name: Create Relese
         uses: ncipollo/release-action@v1.10.0
         with:
           artifacts: "Post*"
           tag: "v${{ env.VER }}"
-          name: "PostSetup-${{ env.VER }}"
+          name: "PostSetup-${{ inputs.version }}"
           prerelease: "${{ inputs.nightly }}"
           bodyFile: "README.md"
