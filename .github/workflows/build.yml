@@ -40,7 +40,7 @@ jobs:
       - name: Create Relese
         uses: ncipollo/release-action@v1.10.0
         with:
-          artifacts: "Post-Setup"
+          artifacts: "Post*"
           tag: "v${{ env.VER }}"
           name: "PostSetup-${{ env.VER }}"
           bodyFile: "README.md"
