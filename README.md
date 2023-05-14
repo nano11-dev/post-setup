@@ -14,4 +14,4 @@
 ## Projects used
 - [UninstallEdge.cmd by Vichingo455](https://gist.github.com/Vichingo455/39bb82496ef566156c8e65696051ce43)
 
-If you want to add something, just create a pull request and if you find any bugs, just create an issue!
+If you want to add something, just create a pull request and if you find any bugs, just create an issue.
