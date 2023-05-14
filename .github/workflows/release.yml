@@ -11,7 +11,7 @@ on:
         required: true
         type: boolean
       version:
-        description: 'Is this pre-release?'
+        description: 'Insert the version number (without the v)'
         required: true
         type: string
 
