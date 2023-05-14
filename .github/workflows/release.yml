@@ -41,5 +41,5 @@ jobs:
           artifacts: "Post*"
           tag: "v${{ env.VER }}"
           name: "PostSetup-${{ env.VER }}"
-          
+          prerelease: "${{ inputs.nightly }}"
           bodyFile: "README.md"
