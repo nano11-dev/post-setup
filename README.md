@@ -3,6 +3,7 @@
 - OS tweaks
 - Install apps
 ## Installable apps
+- [Brave](https://brave.com/)
 - [Firefox](https://www.mozilla.org/it/firefox/new/)
 - [StartAllBack *](https://www.startallback.com/)
 - [Nilesoft Shell](https://nilesoft.org/)
