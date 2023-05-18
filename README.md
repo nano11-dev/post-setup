@@ -9,6 +9,7 @@
 - [Nilesoft Shell](https://nilesoft.org/)
 - [Files app](https://files.community/)
 - [Nanazip](https://github.com/M2Team/NanaZip)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
    (*) You need to provide yourself a key, I am not adding cracked/pirated programs to the post-setup
 
