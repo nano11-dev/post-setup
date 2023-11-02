@@ -1,3 +1,7 @@
+      - name: Create Relese
+        uses: ncipollo/release-action@v1.10.0
         with:
-          name: Post-Setup
-          path: Post-Setup.zip
+          artifacts: "Post-Setup"
+          tag: "v${{ env.VER }}"
+          name: "PostSetup-${{ env.VER }}"
+          bodyFile: "README.md"
