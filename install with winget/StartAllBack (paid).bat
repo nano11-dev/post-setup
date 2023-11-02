@@ -1,4 +1,5 @@
-echo installing startallback
+@echo off
+echo Installing StartAllBack
 winget install startallback
 pause
 exit
