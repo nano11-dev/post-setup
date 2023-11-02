@@ -1,10 +1,10 @@
-## Nano11 Post-setup
+## Nano11 Post-setup redesign
 ### Features
 - OS tweaks
 - Install apps
 
-## Projects used
+## Projects used in the original post-setup
 - [UninstallEdge.cmd by Vichingo455](https://gist.github.com/Vichingo455/39bb82496ef566156c8e65696051ce43)
 
-## Contribution
-If you want to add something, just create a pull request and if you find any bugs, just create an issue.
+## Notes
+The official post-setup was ENTIRELY made by XPower7125.
