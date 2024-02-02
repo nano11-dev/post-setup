@@ -5,4 +5,4 @@ irm https://github.com/BunnyRabbit12/N11-post-setup/raw/BIN/7za.exe -OutFile C:\
 C:\Windows\Temp\N11\7za.exe x C:\Windows\Temp\N11\N11-main.zip -y -oc:\Users\Public\Desktop\
 ren "C:\Users\Public\Desktop\post-setup-main" "C:\Users\Public\Desktop\post-setup"
 cmd.exe /c rmdir c:\Windows\temp\N11\ /s /q
-exits
+exit
