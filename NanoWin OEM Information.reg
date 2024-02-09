@@ -3,8 +3,6 @@
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation]
 "HelpCustomized"=dword:00000001
 "Manufacturer"="NanoWin"
-"SupportProvider"="Nano11 Support"
+"SupportProvider"="NanoWin Support"
 "SupportAppURL"="nano11-support-help"
 "SupportURL"="https://discord.gg/tJ4J9taUU2"
-"Model"="Nano11"
-
