@@ -1,7 +1,41 @@
+Write-Output "Checking for administrator permissions..."
+# Get the ID and security principal of the current user account
+$myWindowsID=[System.Security.Principal.WindowsIdentity]::GetCurrent()
+$myWindowsPrincipal=new-object System.Security.Principal.WindowsPrincipal($myWindowsID)
+
+# Get the security principal for the Administrator role
+$adminRole=[System.Security.Principal.WindowsBuiltInRole]::Administrator
+
+# Check to see if we are currently running "as Administrator"
+if ($myWindowsPrincipal.IsInRole($adminRole))
+   {
+   Write-Output "The script is running as administrator. Can continue"
+   }
+else
+   {
+   # We are not running "as Administrator" - so relaunch as administrator
+
+   # Create a new process object that starts PowerShell
+   $newProcess = new-object System.Diagnostics.ProcessStartInfo "PowerShell";
+
+   # Specify the current script path and name as a parameter
+   $newProcess.Arguments = $myInvocation.MyCommand.Definition;
+
+   # Indicate that the process should be elevated
+   $newProcess.Verb = "runas";
+
+   # Start the new process
+   [System.Diagnostics.Process]::Start($newProcess);
+
+   # Exit from the current, unelevated, process
+   exit
+   }
+
+
 Write-Output "Cleaning up temp for Post-Setup..."
 Remove-Item -Recurse -Force "$env:localappdata\Temp\N11\" -erroraction silentlycontinue
-Remove-Item -Recurse -Force "$env:UserProfile\Desktop\post-setup-main" -erroraction silentlycontinue
-Remove-Item -Recurse -Force "$env:UserProfile\Desktop\post-setup" -erroraction silentlycontinue
+Remove-Item -Recurse -Force "C:\Users\Public\Desktop\post-setup-main" -erroraction silentlycontinue
+Remove-Item -Recurse -Force "C:\Users\Public\Desktop\post-setup" -erroraction silentlycontinue
 
 New-Item -ItemType Directory -Path $env:localappdata\Temp\N11\ -ErrorAction SilentlyContinue
 
@@ -16,6 +50,7 @@ $zipFilePath = Join-Path "$env:localappdata\Temp\N11\" "N11-main.zip"
 $extractorPath = Join-Path $env:localappdata\Temp\N11\ "7za.exe"
 
 Write-Output "Extracting Post-Setup..."
-Start-Process -FilePath $extractorPath -ArgumentList "x", $zipFilePath, "-y", "-o$env:UserProfile\Desktop\" -Wait -WindowStyle Hidden
-Rename-Item "$env:UserProfile\Desktop\post-setup-main" "$env:UserProfile\Desktop\post-setup"
+Start-Process -FilePath $extractorPath -ArgumentList "x", $zipFilePath, "-y", "-oC:\Users\Public\Desktop\" -Wait -WindowStyle Hidden
+Rename-Item "C:\Users\Public\Desktop\post-setup-main" "C:\Users\Public\Desktop\post-setup"
+
 exit
