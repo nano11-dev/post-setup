@@ -1,0 +1,1 @@
+wsreset -i
