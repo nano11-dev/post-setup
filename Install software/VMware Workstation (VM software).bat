@@ -1,5 +1,5 @@
 @echo off
-echo installing VmWare workstation
+echo installing VMware workstation
 winget install -e --id VMware.WorkstationPro
 pause
 exit
