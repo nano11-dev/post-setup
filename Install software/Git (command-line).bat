@@ -1,5 +1,5 @@
 @echo off
-echo Installing Gut
+echo Installing Git
 winget install --id Git.Git -e --source winget
 pause
 exit
