@@ -2,3 +2,5 @@
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
 "verbosestatus"=dword:00000001
+
+#r
