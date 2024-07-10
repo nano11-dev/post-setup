@@ -13,7 +13,7 @@
 ## Notes
 Most of The official post-setup was made by XPower7125.
 
-Installer and updater made by BunnyRabbit12.
+Installer and updater made by BunnyRabbit12 / StarNumber12046.
 
 ## Important note
 If you have issues installing apps with Winget, please update the App installer from the Microsoft sotre or from WingetUI or try to restart your PC.
