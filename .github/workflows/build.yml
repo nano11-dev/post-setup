@@ -29,7 +29,7 @@ jobs:
         with:
           filename: Post-Setup.zip
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4
         with:
           name: Post-Setup
           path: Post-Setup.zip
