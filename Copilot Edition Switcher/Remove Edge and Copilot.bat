@@ -11,6 +11,7 @@ echo Removing Edge...
 taskkill /f /im msedge.exe
 )
 taskkill /f /im msedge.exe
+taskkill /f /im microsoftedgeupdate.exe
 del /q /s "%windir%\..\Program Files (x86)\Microsoft\Edge"
 del /q /s "%windir%\..\Program Files (x86)\Microsoft\EdgeCore"
 del /q /s "%windir%\..\Program Files (x86)\Microsoft\EdgeUpdate"
