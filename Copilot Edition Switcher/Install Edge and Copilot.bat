@@ -6,7 +6,7 @@ if %errorLevel% neq 0 (
     exit /b
 )
 echo Installing Microsoft Edge...
-winget install "Microsoft Edge Browser" -e --accept-package-agreements --accept-source-agreements
+winget install "Microsoft Edge Browser" --accept-package-agreements --accept-source-agreements
 if %errorLevel% neq 0 (
     echo Failed to install Microsoft Edge.
 ) else (
