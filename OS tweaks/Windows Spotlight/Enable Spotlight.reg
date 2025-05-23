@@ -2,6 +2,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\CloudContent]
 "DisableWindowsSpotlightFeatures"=dword:00000000
+"DisableSpotlightCollectionOnDesktop"=dword:0000000
 "ConfigureWindowsSpotlight"=dword:00000001
 "IncludeEnterpriseSpotlight"=dword:00000001
 "DisableWindowsSpotlightWindowsWelcomeExperience"=dword:00000000
