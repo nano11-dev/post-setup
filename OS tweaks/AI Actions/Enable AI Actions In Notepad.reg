@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Notepad]
+"PreventRewrite"=dword:00000000
+
